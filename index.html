@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clash3D Hub</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page home-page">
+    <header class="topbar">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">⚡</span>
+        <span>Clash3D Hub</span>
+      </a>
+      <nav class="topnav" aria-label="Primary navigation">
+        <a class="active" href="index.html">Overview</a>
+        <a href="dashboard.html">Community</a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation">☰</button>
+    </header>
+
+    <main class="app-shell">
+      <aside class="sidebar">
+        <section class="panel">
+          <p class="eyebrow">Mission</p>
+          <h3>Build your squad rhythm</h3>
+          <p>Coordinate lane calls, share strategies, and keep every match feeling fresh.</p>
+        </section>
+        <section class="panel">
+          <p class="eyebrow">Quick actions</p>
+          <ul class="stack-list">
+            <li>Share lane setups</li>
+            <li>Post squad invites</li>
+            <li>Drop clips and tips</li>
+          </ul>
+        </section>
+      </aside>
+
+      <section class="content">
+        <section class="hero">
+          <div>
+            <p class="eyebrow">Live social layer for your game</p>
+            <h1>Clash3D Community Hub</h1>
+            <p class="hero-copy">
+              Bring together match highlights, tactical talk, and community hype in one polished experience.
+            </p>
+            <div class="hero-actions">
+              <a class="button" href="dashboard.html">Open community</a>
+              <button class="button button-secondary" id="demo-btn" type="button">Preview mode</button>
+            </div>
+          </div>
+          <div class="hero-card">
+            <p class="eyebrow">Tonight's focus</p>
+            <ul>
+              <li>Three-lane push timing</li>
+              <li>Defense rotations</li>
+              <li>Highlight reel drop</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="cards">
+          <article class="panel stat-card">
+            <h3>Live posts</h3>
+            <p class="stat-value" id="live-posts">0</p>
+          </article>
+          <article class="panel stat-card">
+            <h3>Last update</h3>
+            <p class="stat-value" id="current-date">—</p>
+          </article>
+          <article class="panel stat-card">
+            <h3>Fast lanes</h3>
+            <p class="stat-value">3</p>
+          </article>
+        </section>
+
+        <section class="community-section">
+          <div class="section-heading">
+            <h2>Community window</h2>
+            <p>Post updates and share files directly from the same interface.</p>
+          </div>
+          <div data-community-root></div>
+        </section>
+      </section>
+    </main>
+
+    <script src="Clash3dProjApp.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

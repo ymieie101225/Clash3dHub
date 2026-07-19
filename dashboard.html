@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clash3D Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page dashboard-page">
+    <header class="topbar">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">⚡</span>
+        <span>Clash3D Hub</span>
+      </a>
+      <nav class="topnav" aria-label="Primary navigation">
+        <a href="index.html">Overview</a>
+        <a class="active" href="dashboard.html">Community</a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation">☰</button>
+    </header>
+
+    <main class="dashboard-layout">
+      <section class="panel dashboard-card">
+        <p class="eyebrow">Weekly focus</p>
+        <h2>Lane tempo board</h2>
+        <ul class="stack-list">
+          <li>Mid-lane pressure</li>
+          <li>Cross-map rotations</li>
+          <li>Team callouts</li>
+        </ul>
+      </section>
+      <section class="panel dashboard-card wide">
+        <p class="eyebrow">Community feed</p>
+        <h2>Share, discuss, and connect</h2>
+        <p class="muted">Use the widget below to post messages and attach small files.</p>
+        <div data-community-root></div>
+      </section>
+    </main>
+
+    <script>
+      window.FIREBASE_DATABASE_URL = window.FIREBASE_DATABASE_URL || '';
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/10.15.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.15.0/firebase-database-compat.js"></script>
+    <script src="Clash3dProjApp.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
